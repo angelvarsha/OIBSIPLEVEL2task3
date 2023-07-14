@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(150deg, lightskyblue 0%, purple 90%);
+}
+
+.container {
+    position: relative;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.add_task {
+    width: 100%;
+    max-width: 500px;
+}
+
+.completed {
+    text-align: left;
+    padding: 20px;
+    margin: 5px;
+}
+
+.pending {
+    text-align: left;
+    padding: 20px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.add_task input {
+    padding: 10px;
+    margin-block: 12px;
+    border-radius: 5px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.add_task button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: steelblue;
+    cursor: pointer;
+}
+
+ol li {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 18px;
+    background: powderblue;
+    padding: 15px;
+    counter-increment: my-counter;
+    border-radius: 8px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ol li::before {
+    content: counter(my-counter);
+    width: 1rem;
+    height: 2rem;
+    background: teal;
+    border-radius: 20%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+}
+
+li button {
+    float: right;
+    padding: 10px;
+    margin: 5px;
+}
